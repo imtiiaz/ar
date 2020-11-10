@@ -84,11 +84,5 @@ $(document).ready(function () {
 
 // Parallax
 
-var scene = document.getElementById('scene');
-var parallaxInstance = new Parallax(scene, {
-//  relativeInput: true,
-    hoverOnly: true
-});
-
 
 });
