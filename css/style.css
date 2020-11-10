@@ -287,7 +287,7 @@ button:focus{
     padding-bottom: 40px;
 }
 
-.about_content a {
+a.more  {
     font-size: 20px;
     color: #5BE592;
     text-transform: capitalize;
@@ -300,7 +300,7 @@ button:focus{
     -ms-transition: all linear .3s;
 }
 
-.about_content a:hover {
+a.more:hover {
     color: #fff;
 }
 
@@ -364,7 +364,12 @@ button:focus{
     transform: scale(1.1)
 }
 
-
+#services_section a.more {
+    font-size: 14px;
+     padding-bottom: 0; 
+    border-bottom: 1px solid #5BE592;
+    margin-top: 10px;
+}
 
 /* 9.-------------------------------------------
                     Video Section
