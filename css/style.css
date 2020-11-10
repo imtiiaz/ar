@@ -1,0 +1,547 @@
+/*-----------------------------------------------------------------------------------
+
+    Template Name: Responsive Landing Page Template  
+    Template URI: http://demo.com
+    Description: This is html5 template
+    Author: imtiaz
+    Author URI: http://demo.com
+    Version: 1
+
+-----------------------------------------------------------------------------------
+    
+    CSS INDEX
+    ===================
+	
+    1. Template default css
+    2. Header Section
+    3. Slider Section
+    4. Service Section 
+    5. About Section
+    6. Team Section
+    7. Counter Section
+    8. Service Section 
+    9. News Section
+    10. Client Section
+    11. Footer Section
+    12. Scrollup
+    13. Blog details
+    
+    
+-----------------------------------------------------------------------------------*/
+
+
+/* 1.---------------------------------------------
+                Template default css
+------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Kodchasan:wght@300;400;500;600;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    color: #fff;
+    background: #121212;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    outline: 0;
+}
+
+a:hover {
+    text-decoration: none;
+    outline: 0;
+}
+
+ul,
+li,
+ol {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+p,
+a {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-family: 'Kodchasan', sans-serif;
+    color: rgba(255, 255, 255, .6);
+    padding-bottom: 20px;
+}
+
+.btn.focus,
+.btn:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none;
+}
+
+.overflow_x {
+    overflow-x: hidden;
+}
+
+
+
+/* 2.-------------------------------------------
+                    Header Section
+-----------------------------------------------*/
+
+.main_menu {
+    background: hsl(0, 0%, 0%);
+    background: #222;
+}
+
+.navbar-brand {
+    color: #5BE592;
+}
+
+.navbar-toggler i {
+    color: #5BE592;
+    border: 1px solid #5BE592;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+button:focus{
+    outline: 0;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: rgba(255, 255, 255, .6);
+    text-transform: capitalize;
+    font-weight: 500;
+    line-height: 1;
+    padding: 30px 15px;
+    margin: 0 5px;
+    position: relative;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -os-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #fff;
+}
+
+.navbar-nav .nav-item .nav-link:after {
+    position: absolute;
+    content: '';
+    bottom: 2px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #fff;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -os-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+
+}
+
+.navbar-nav .nav-item .nav-link:hover:after {
+    width: 100%;
+}
+
+.navbar-nav .nav-item .nav-link.active {
+    color: #fff;
+}
+
+.navbar-nav .nav-item .nav-link.active:after {
+    width: 100%;
+}
+
+/* 3.-------------------------------------------
+                    Banner Section
+-----------------------------------------------*/
+#banner_section {
+    position: relative;
+}
+
+#particles-js2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 99;
+
+}
+
+.banner_slider {
+    background: #121212;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 90vh;
+    position: relative;
+    z-index: 1;
+}
+
+.banner_slider:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: -11;
+}
+
+.banner_content {
+    padding-top: 250px;
+    text-align: left;
+}
+
+.banner_content h1 {
+    font-size: 70px;
+    color: #fff;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+
+.banner_content p {
+    font-size: 18px;
+    padding-top: 15px;
+    padding-bottom: 40px;
+
+}
+
+.banner_img {
+    padding-top: 250px;
+}
+
+.button .btn {
+    font-size: 20px;
+    text-transform: capitalize;
+    line-height: 1;
+    color: #fff;
+    background: #5BE592;
+    padding: 18px 45px;
+    border: 1px solid #5BE592;
+    border-radius: 0;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -os-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    z-index: 9999999999;
+}
+
+.button .btn:hover {
+    background: transparent;
+}
+
+/* 4.-------------------------------------------
+                    About Section
+-----------------------------------------------*/
+
+
+
+.about_content {
+    padding-left: 15px;
+}
+
+.about_content h3 {
+    font-size: 35px;
+    position: relative;
+}
+
+.about_content h3:after {
+    position: absolute;
+    content: '';
+    bottom: -25px;
+    left: 0;
+    height: 4px;
+    width: 50px;
+    border-radius: 5px;
+    background: #5BE592;
+}
+
+.about_content p {
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+.about_content a {
+    font-size: 20px;
+    color: #5BE592;
+    text-transform: capitalize;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #5BE592;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -os-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+}
+
+.about_content a:hover {
+    color: #fff;
+}
+
+
+/* 5.-------------------------------------------
+                    App Section
+-----------------------------------------------*/
+.app_img {
+    position: relative;
+}
+
+.app_img a i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 70px;
+    color: #5BE592;
+
+}
+
+
+/* 6.-------------------------------------------
+                    Services Section
+-----------------------------------------------*/
+
+#services_section {
+    background: url(../images/app/app-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#services_section .section_title {
+    padding: 0 6px;
+}
+
+.services_item {
+    text-align: center;
+}
+
+.services_item p {
+    padding-bottom: 0;
+}
+
+.services_img {
+    overflow: hidden;
+}
+
+.services_img img {
+    height: 210px;
+    width: 350px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -os-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+}
+
+.services_img img:hover {
+    transform: scale(1.1)
+}
+
+
+
+/* 9.-------------------------------------------
+                    Video Section
+-----------------------------------------------*/
+#video_section {
+    border-bottom: 1px solid #fff;
+}
+
+.video {
+    height: 300px;
+    margin-bottom: 30px;
+}
+
+
+/* 9.-------------------------------------------
+                    Gallery Section
+-----------------------------------------------*/
+
+.gallery_item {
+    overflow: hidden;
+    margin-bottom: 30px
+}
+
+.gallery_img {
+    position: relative;
+}
+
+.gallery_img .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: rgba(91, 229, 146, 0.6);
+    opacity: 0;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -os-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+}
+
+.gallery_img .overlay:hover {
+    opacity: 1;
+}
+
+.gallery_img .overlay a i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 29px;
+    color: #fff;
+}
+
+
+.gallery_img img {
+    width: 615px;
+    height: 390px;
+}
+
+
+
+
+/* 7.-------------------------------------------
+                    Contact Section
+-----------------------------------------------*/
+
+.form-control {
+    text-transform: capitalize;
+    line-height: 1;
+    padding: 15px 5px 15px 25px;
+    margin-bottom: 30px;
+    border-radius: 0;
+    color: #fff;
+}
+
+.form-control:focus {
+    border-color: #5BE592;
+    box-shadow: none;
+}
+
+.submit input {
+    font-size: 20px;
+    text-transform: capitalize;
+    line-height: 1;
+    color: #fff;
+    background: #5BE592;
+    padding: 20px 45px;
+    border: 1px solid #5BE592;
+    border-radius: 0;
+    cursor: pointer;
+}
+
+.submit input:focus {
+    outline: none;
+}
+
+
+
+
+
+
+/* 8.-------------------------------------------
+                    Footer Section
+-----------------------------------------------*/
+footer {
+    position: relative;
+}
+
+#particles-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.footer_top {
+    border-top: 1px solid #5BE592;
+}
+
+.widget_title h3 {
+    font-size: 24px;
+    text-transform: capitalize;
+    line-height: 1;
+    font-weight: 600;
+
+}
+
+.footer_widget p {
+    padding-right: 50px;
+
+}
+
+.footer_widget ul li a {
+    color: rgba(255, 255, 255, .6);
+    font-size: 16px;
+    text-transform: capitalize;
+    padding-bottom: 15px;
+
+}
+
+.footer_widget ul li i {
+    color: #5BE592;
+    font-size: 16px;
+    margin-right: 10px;
+
+}
+
+.social a i {
+    font-size: 18px;
+    text-align: center;
+    color: #ddd;
+    border: 1px solid #5BE592;
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -os-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+}
+
+.social a i:hover {
+    background: #5BE592;
+    border-color: #5BE592;
+}
+
+.copyright {
+    border-top: 1px solid #35434e;
+}
+
+
+
+/* 10.-------------------------------------------
+                    Header Section
+-----------------------------------------------*/

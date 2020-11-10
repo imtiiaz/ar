@@ -1,0 +1,23 @@
+/***********************************************************************************
+ Banner start
+***********************************************************************************/
+
+@media (max-width: 991px) {
+
+    .main_menu {
+        padding: 10px 0;
+    }
+
+    .navbar-nav .nav-item .nav-link {
+        padding: 20px 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .banner_content h1 {
+        font-size: 50px;
+
+    }
+}
