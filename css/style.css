@@ -457,10 +457,20 @@ button:focus{
     border: 1px solid #5BE592;
     border-radius: 0;
     cursor: pointer;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -os-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+}
 }
 
 .submit input:focus {
     outline: none;
+}
+.submit input:hover {
+    background: #000;
+    
 }
 
 
