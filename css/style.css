@@ -260,10 +260,6 @@ button:focus {
                     About Section
 -----------------------------------------------*/
 
-.about_content {
-    padding-left: 15px;
-}
-
 .about_content h3 {
     font-size: 35px;
     position: relative;
@@ -527,7 +523,14 @@ footer {
     font-size: 16px;
     text-transform: capitalize;
     padding-bottom: 15px;
-
+     transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -os-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+}
+.footer_widget ul li a:hover {
+      color: #5BE592;
 }
 
 .footer_widget ul li i {
