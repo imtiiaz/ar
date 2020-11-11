@@ -263,7 +263,7 @@ button:focus {
 .tb_animation {
     position: relative;
     animation-name: tb_animation;
-    animation-duration: 2s;
+    animation-duration: 4s;
     animation-iteration-count: infinite;
 }
 
