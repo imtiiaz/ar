@@ -41,7 +41,7 @@
 @media (max-width: 767px) {
 
     .banner_content {
-        padding-top: 100px;
+        padding: 100px 0;
     }
 
     .banner_content h1 {
