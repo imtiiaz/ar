@@ -73,8 +73,8 @@ $(function () {
 
     // Wow js
 
-    new WOW().init();
-     // Venobox
+    //    new WOW().init();
+    // Venobox
 
     $(document).ready(function () {
         $('.venobox').venobox();

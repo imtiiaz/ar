@@ -271,14 +271,15 @@ button:focus {
     0% {
         top: 0;
     }
+
     50% {
         top: 30px;
     }
+
     100% {
         top: 0;
     }
 }
-
 
 .about_content h3 {
     font-size: 35px;
@@ -302,7 +303,7 @@ button:focus {
 }
 
 a.more {
-    font-size: 20px;
+    font-size: 18px;
     color: #5BE592;
     text-transform: capitalize;
     padding-bottom: 2px;
@@ -356,10 +357,6 @@ a.more:hover {
     background-position: center;
 }
 
-#app_section .section_title {
-    padding: 0 6px;
-}
-
 .app_item {
     text-align: center;
 }
@@ -410,18 +407,90 @@ a.more:hover {
                     Gallery Section
 -----------------------------------------------*/
 
-.gallery_item {
-    overflow: hidden;
-    margin-bottom: 30px
-}
 
-.gallery_img {
+
+#gallery_section .gallery_item {
+    overflow: hidden;
+    margin-bottom: 30px;
     position: relative;
 }
-.gallery_img img {
-   max-width: 100%;
+
+.gallery_item .overlay {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    transition: -webkit-transform 0.4s ease;
+    transition: transform 0.4s ease;
+    transition: transform 0.4s ease, -webkit-transform 0.4s ease;
+    -webkit-transform: scale(0, 1);
+    -ms-transform: scale(0, 1);
+    transform: scale(0, 1);
+    -webkit-transform-origin: right center;
+    -ms-transform-origin: right center;
+    transform-origin: right center;
 }
 
+.gallery_item  .gallery_img {
+    position: relative;
+}
+
+.gallery_item.gallery_img img {
+    max-width: 100%;
+    position: relative;
+}
+
+.gallery_item:hover .overlay {
+    -webkit-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    transform: scale(1, 1);
+    -webkit-transform-origin: left center;
+    -ms-transform-origin: left center;
+    transform-origin: left center;
+}
+
+.gallery_img  .overlay:after {
+    position: absolute;
+    content: '';
+    left: 0px;
+    top: 0;
+    right: 0px;
+    bottom: 0px;
+    z-index: 1;
+    background-image: -ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%, #5BE592 100%);
+    background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, #5BE592 100%);
+    background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, #5BE592 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(255, 255, 255, 0)), color-stop(100, #1C2C52));
+    background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, #5BE592 100%);
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #5BE592 100%);
+}
+
+.gallery_img .overlay a {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 60px;
+    height: 60px;
+    color: #0060ff;
+    z-index: 11111;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    line-height: 60px;
+    border-radius: 50px;
+    display: inline-block;
+    background-color: #ffffff;
+    -webkit-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    transition: all 300ms ease;
+}
+
+
+/*
 .gallery_img .overlay {
     position: absolute;
     top: 10px;
@@ -438,11 +507,15 @@ a.more:hover {
     -ms-transition: all linear .3s;
     opacity: 0;
 }
+*/
 
-.gallery_img .overlay:hover {
+/*
+.gallery_img:hover .overlay {
     opacity: 1;
 }
+*/
 
+/*
 .gallery_img .overlay a i {
     position: absolute;
     top: 50%;
@@ -460,6 +533,7 @@ a.more:hover {
     -os-transition: all linear .3s;
     -ms-transition: all linear .3s;
 }
+*/
 
 /* 7.-------------------------------------------
                     Contact Section
@@ -543,14 +617,15 @@ footer {
     font-size: 16px;
     text-transform: capitalize;
     padding-bottom: 15px;
-     transition: all linear .3s;
+    transition: all linear .3s;
     -webkit-transition: all linear .3s;
     -moz-transition: all linear .3s;
     -os-transition: all linear .3s;
     -ms-transition: all linear .3s;
 }
+
 .footer_widget ul li a:hover {
-      color: #5BE592;
+    color: #5BE592;
 }
 
 .footer_widget ul li i {
@@ -587,6 +662,302 @@ footer {
 
 
 
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++=++
+++++++++++++++++++++++++About Page++++++++++++++++++++++++++*/
+
 /* 10.-------------------------------------------
-                    Header Section
+                    About Company 1
+-----------------------------------------------*/
+
+#about_company-1 {
+    overflow: hidden;
+}
+
+.inner_page-bg {
+    background: url(../images/about-page/about-bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.inner_title h2 {
+    line-height: 1.4
+}
+
+.inner_title p {
+    text-transform: capitalize;
+    padding-bottom: 0;
+}
+
+.inner_title a {
+    color: #5BE592;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -os-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+}
+
+.inner_title a:hover {
+    color: #fff;
+}
+
+.feature_item {
+    position: relative;
+    padding-left: 70px;
+
+}
+
+.feature i {
+    position: absolute;
+    left: 0;
+    top: 5px;
+    font-size: 40px;
+    color: #5BE592;
+}
+
+.inner_button .btn {
+    font-size: 18px;
+    padding: 15px 30px;
+}
+
+
+.rotate {
+    -webkit-animation: rotate 5s normal linear infinite;
+    animation: rotate 5s normal linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        -webkit-transform: rotate3d(0, 0, .9, 0deg);
+        transform: rotate3d(0, 0, .9, 0deg);
+    }
+
+    25% {
+        -webkit-transform: rotate3d(0, 0, 1, 90deg);
+        transform: rotate3d(0, 0, 1, 90deg);
+    }
+
+    50% {
+        -webkit-transform: rotate3d(0, 0, 1, 180deg);
+        transform: rotate3d(0, 0, 1, 180deg);
+    }
+
+    75% {
+        -webkit-transform: rotate3d(0, 0, 1, 270deg);
+        transform: rotate3d(0, 0, 1, 270deg);
+    }
+
+    100% {
+        -webkit-transform: rotate3d(0, 0, 1, 360deg);
+        transform: rotate3d(0, 0, 1, 360deg);
+    }
+}
+
+/* 10.-------------------------------------------
+                    About Company 2
+-----------------------------------------------*/
+
+#about_company-2 {
+    background: url(../images/about-page/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+}
+
+#about_company-2::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: -1;
+}
+
+.about_left {
+    position: relative;
+
+}
+
+.circle img {
+    width: 400px;
+}
+
+.zoom-in-out {
+    animation: zoom-in-out 5s forwards;
+    animation-iteration-count: infinite;
+}
+
+@keyframes zoom-in-out {
+    0% {
+        transform: scale(1, 1);
+    }
+
+    50% {
+        transform: scale(1.1, 1.1);
+    }
+
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+.about_company-2_img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.about_company-2_img img {
+    border: 10px solid #5BE592;
+    border-radius: 30px;
+}
+
+
+/* 10.-------------------------------------------
+                    About Process 
+-----------------------------------------------*/
+#about_process {
+    position: relative;
+    overflow: hidden;
+}
+
+.process_bg1 {
+    background: url(../images/about-page/process/processs-bg1.png);
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 911px;
+    height: 579px;
+    background-repeat: no-repeat;
+}
+
+.process_bg2 {
+    background: url(../images/about-page/process/process-bg2.png);
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 722px;
+    height: 579px;
+    background-repeat: no-repeat;
+}
+
+.process_item {
+    position: relative;
+    margin-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -os-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+}
+
+.process_item:hover:after {
+    bottom: 0;
+}
+
+.process_item:hover .number_box p {
+    background: #5BE592;
+    color: #e1e1e1;
+}
+
+.process_item:after {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    right: 0;
+    bottom: 30px;
+    border: 1px solid #fff;
+    z-index: -1;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -os-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+}
+
+.process_item .number_box p {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    color: #5BE592;
+    background: #e1e1e1;
+    text-align: center;
+    border-radius: 50px;
+    border: 1px solid #5BE592;
+    line-height: 72px;
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 30px;
+    display: inline-block;
+    z-index: 1;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -os-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+}
+
+.process_item h3 {
+    color: #5BE592;
+    text-transform: uppercase;
+    padding-bottom: 25px;
+}
+
+.process_item p {
+    padding-bottom: 15px;
+}
+
+.process_item .more {
+    opacity: 0;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -os-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+}
+
+.process_item:hover .more {
+    opacity: 1;
+    z-index: 9999;
+}
+
+
+
+
+
+/* 10.-------------------------------------------
+                    Gallery Page
+-----------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+/* 10.-------------------------------------------
+                    About Company 2
+-----------------------------------------------*/
+
+/* 10.-------------------------------------------
+                    About Company 2
+-----------------------------------------------*/
+
+/* 10.-------------------------------------------
+                    About Company 2
 -----------------------------------------------*/

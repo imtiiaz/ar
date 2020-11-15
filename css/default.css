@@ -15,6 +15,7 @@
     padding-bottom: 20px;
     font-family: 'Poppins', sans-serif;
 }
+
 .section_title h2:after {
     position: absolute;
     content: '';
@@ -26,6 +27,7 @@
     background: #5BE592;
     border-radius: 5px;
 }
+
 .section_title h2 span {
     color: #fff;
     letter-spacing: 3px;
@@ -39,6 +41,21 @@
     text-transform: capitalize;
 }
 
+h4 {
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 10px !important;
+    text-transform: capitalize;
+}
+
+.inner_title h2 {
+    line-height: 1.4;
+    text-transform: capitalize;
+}
+
+.inner_title h2:after {
+    content: none;
+}
 
 /*===============================
             Scroll Top
@@ -1003,4 +1020,3 @@
 .pl-150 {
     padding-left: 150px
 }
-
