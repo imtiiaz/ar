@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/venobox.min.css">
+    <link rel="stylesheet" href="css/imagehover.min.css">
     <link rel="stylesheet" href="css/default.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
@@ -35,7 +36,7 @@
         <div class="main_menu wow bounceInUp">
             <nav class="navbar navbar-expand-lg py-0">
                 <div class="container">
-                    <a class="navbar-brand" href="#">casadiar</a>
+                    <a class="navbar-brand" href="index.html">casadiar</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <i class="fas fa-bars"></i>
                     </button>
@@ -48,16 +49,13 @@
                                 <a class="nav-link" href="about.html">about</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="index.html#app_section">our app</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="index.html#video_section">videos</a>
+                                <a class="nav-link" href="app.html">our app</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="gallery.html">gallery</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="index.html#contact_section">contact</a>
+                                <a class="nav-link" href="contact.html">contact</a>
                             </li>
                         </ul>
                     </div>
@@ -87,117 +85,183 @@
 
     <!--=====================Gallery Section  start===========================-->
 
-    <section id="gallery_section" class="pt-100 pb-70 overflow_x">
+    <section id="gallery_section" class="pt-100 overflow_x">
         <div class="container">
             <div class="section_title inner_title pb-50 text-center wow bounceIn">
                 <h2>
                     our gallery<span>.</span>
                 </h2>
+                <div class="shape-animation">
+                    <div class="shape rotate shape-1">
+                        <img src="shape/triangle.png" class="img-fluid" alt=" not-found">
+                    </div>
+                    <div class="shape shape-2 rotate">
+                        <img src="shape/squre.png" class="img-fluid" alt=" not-found">
+                    </div>
+                </div>
             </div>
         </div>
-
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-6 col-sm-6 col-12 text-center wow slideInRight">
-                    <div class="gallery_item">
-                        <div class="gallery_img">
-                            <img src="images/gallery/gallery-1.jpg" class="" alt="not-found">
-                            <div class="overlay">
-                                <a class="venobox" data-gall="gallery01" href="images/gallery/gallery-1.jpg">
-                                    <i class="fas fa-search-plus"></i>
-                                </a>
-                            </div>
-                        </div>
+                    <div class="gallery_item gal_inner">
+                        <figure class="imghvr-hinge-up">
+                            <img src="images/gallery/gallery-1.jpg">
+                            <figcaption class="gal_content">
+                                <div class="content">
+                                    <a class="venobox" data-gall="gallery01" href="images/gallery/gallery-1.jpg">
+                                    </a>
+                                    <h3>Lorem ipsum dolor.</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure vero, ea eum. Repudiandae assumenda, temporibus.</p>
+                                </div>
+                            </figcaption>
+                        </figure>
                     </div>
                 </div>
-                <div class="col-lg-6 col-sm-6 col-12 text-center wow slideInLeft">
-                    <div class="gallery_item">
-                        <div class="gallery_img">
-                            <img src="images/gallery/gallery-2.jpg" class="" alt="not-found">
-                            <div class="overlay">
-                                <a class="venobox" data-gall="gallery01" href="images/gallery/gallery-2.jpg">
-                                    <i class="fas fa-search-plus"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6 col-12 text-center wow slideInRight">
-                    <div class="gallery_item">
-                        <div class="gallery_img">
-                            <img src="images/gallery/gallery-3.jpg" class="" alt="not-found">
-                            <div class="overlay">
-                                <a class="venobox" data-gall="gallery01" href="images/gallery/gallery-3.jpg">
-                                    <i class="fas fa-search-plus"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6 col-12 text-center wow slideInLeft">
-                    <div class="gallery_item">
-                        <div class="gallery_img">
-                            <img src="images/gallery/gallery-4.jpg" class="" alt="not-found">
-                            <div class="overlay">
-                                <a class="venobox" data-gall="gallery01" href="images/gallery/gallery-3.jpg">
-                                    <i class="fas fa-search-plus"></i>
-                                </a>
-                            </div>
-                        </div>
+                <div class="col-lg-6 col-sm-6 col-12 text-center wow slideInRight">
+                    <div class="gallery_item gal_inner">
+                        <figure class="imghvr-hinge-up">
+                            <img src="images/gallery/gallery-2.jpg">
+                            <figcaption class="gal_content">
+                                <div class="content">
+                                    <a class="venobox" data-gall="gallery01" href="images/gallery/gallery-2.jpg">
+                                    </a>
+                                    <h3>Lorem ipsum dolor.</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure vero, ea eum. Repudiandae assumenda, temporibus.</p>
+                                </div>
+                            </figcaption>
+                        </figure>
                     </div>
                 </div>
                 <div class="col-lg-4 col-sm-6 col-12 text-center wow slideInRight">
-                    <div class="gallery_item">
-                        <div class="gallery_img">
-                            <img src="images/gallery/gallery-5.jpg" class="" alt="not-found">
-                            <div class="overlay">
-                                <a class="venobox" data-gall="gallery01" href="images/gallery/gallery-5.jpg">
-                                    <i class="fas fa-search-plus"></i>
-                                </a>
-                            </div>
-                        </div>
+                    <div class="gallery_item gal_inner">
+                        <figure class="imghvr-hinge-up">
+                            <img src="images/gallery/gallery-3.jpg">
+                            <figcaption class="gal_content">
+                                <div class="content">
+                                    <a class="venobox" data-gall="gallery01" href="images/gallery/gallery-3.jpg">
+                                    </a>
+                                    <h3>Lorem ipsum dolor.</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure vero, ea eum. Repudiandae assumenda, temporibus.</p>
+                                </div>
+                            </figcaption>
+                        </figure>
                     </div>
                 </div>
-                <div class="col-lg-6 col-sm-6 col-12 text-center wow slideInLeft">
-                    <div class="gallery_item">
-                        <div class="gallery_img">
-                            <img src="images/gallery/gallery-6.jpg" class="img-fluid" alt="not-found">
-                            <div class="overlay">
-                                <a class="venobox" data-gall="gallery01" href="images/gallery/gallery-6.jpg">
-                                    <i class="fas fa-search-plus"></i>
-                                </a>
-                            </div>
-                        </div>
+                <div class="col-lg-4 col-sm-6 col-12 text-center wow slideInRight">
+                    <div class="gallery_item gal_inner">
+                        <figure class="imghvr-hinge-up">
+                            <img src="images/gallery/gallery-4.jpg">
+                            <figcaption class="gal_content">
+                                <div class="content">
+                                    <a class="venobox" data-gall="gallery01" href="images/gallery/gallery-4.jpg">
+                                    </a>
+                                    <h3>Lorem ipsum dolor.</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure vero, ea eum. Repudiandae assumenda, temporibus.</p>
+                                </div>
+                            </figcaption>
+                        </figure>
                     </div>
                 </div>
-                <div class="col-lg-6 col-sm-6 col-12 text-center wow slideInLeft">
-                    <div class="gallery_item">
-                        <div class="gallery_img">
-                            <img src="images/gallery/gallery-2.jpg" class="" alt="not-found">
-                            <div class="overlay">
-                                <a class="venobox" data-gall="gallery01" href="images/gallery/gallery-2.jpg">
-                                    <i class="fas fa-search-plus"></i>
-                                </a>
-                            </div>
-                        </div>
+                <div class="col-lg-4 col-sm-6 col-12 text-center wow slideInRight">
+                    <div class="gallery_item gal_inner">
+                        <figure class="imghvr-hinge-up">
+                            <img src="images/gallery/gallery-5.jpg">
+                            <figcaption class="gal_content">
+                                <div class="content">
+                                    <a class="venobox" data-gall="gallery01" href="images/gallery/gallery-5.jpg">
+                                    </a>
+                                    <h3>Lorem ipsum dolor.</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure vero, ea eum. Repudiandae assumenda, temporibus.</p>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-6 col-12 text-center wow slideInRight">
+                    <div class="gallery_item gal_inner">
+                        <figure class="imghvr-hinge-up">
+                            <img src="images/gallery/gallery-6.jpg">
+                            <figcaption class="gal_content">
+                                <div class="content">
+                                    <a class="venobox" data-gall="gallery01" href="images/gallery/gallery-6.jpg">
+                                    </a>
+                                    <h3>Lorem ipsum dolor.</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure vero, ea eum. Repudiandae assumenda, temporibus.</p>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-6 col-12 text-center wow slideInRight">
+                    <div class="gallery_item gal_inner">
+                        <figure class="imghvr-hinge-up">
+                            <img src="images/gallery/gallery-3.jpg">
+                            <figcaption class="gal_content">
+                                <div class="content">
+                                    <a class="venobox" data-gall="gallery01" href="images/gallery/gallery-3.jpg">
+                                    </a>
+                                    <h3>Lorem ipsum dolor.</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure vero, ea eum. Repudiandae assumenda, temporibus.</p>
+                                </div>
+                            </figcaption>
+                        </figure>
                     </div>
                 </div>
             </div>
             <div class="button pt-20 text-center">
+                <div class="shape-animation">
+                    <div class="shape shape-3 rotate">
+                        <img src="shape/triangle-bg.png" class="img-fluid" alt=" not-found">
+                    </div>
+                </div>
                 <a href="#" class="btn">send message</a>
             </div>
         </div>
     </section>
 
     <!--=========================Gallery Section End=========================-->
+    <!--=================Video Section Start===============-->
 
+    <section id="video_section" class="pt-100 pb-100">
+        <div class="container">
+            <div class="section_title pb-40 text-center wow bounceIn">
+                <h2>watch awsome video</h2>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-6 wow slideInLeft">
+                    <div class="video">
+                        <video height="100%" width="100%" controls>
+                            <source src="video/video-1.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow slideInRight">
+                    <div class="video">
+                        <video height="100%" width="100%" controls>
+                            <source src="video/video-2.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow slideInLeft">
+                    <div class="video">
+                        <video height="100%" width="100%" controls>
+                            <source src="video/video-1.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow slideInRight">
+                    <div class="video">
+                        <video height="100%" width="100%" controls>
+                            <source src="video/video-2.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!--===============Gallery Start=================-->
-
-
-
-    <!--===============Gallery End===================-->
-
+    <!--=================Video Section End===============-->
 
     <!--=================Footer Section Start===============-->
 
